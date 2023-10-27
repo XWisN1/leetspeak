@@ -1,7 +1,10 @@
 # leetspeak
 leetspeak翻译小玩具
 
-使用方式打开disk中的leetspeak.exe在命令行中输入leetspeak.exe -m 0 -i "asfdasf"即可
+使用方式打开disk中的leetspeak.exe在命令行中输入
+```
+leetspeak.exe -m 0 -i "asfdasf"
+```
 
 -m是选择方式，0-编译，1-解译（目前只对win下的0有用）
 -i 输出内容
