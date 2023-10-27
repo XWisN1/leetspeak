@@ -25,27 +25,17 @@ def main():
     parser = argparse.ArgumentParser(description="LeetSpeak Program")
     parser.add_argument("-m", "--mode", help="Selects mode 0 or 1")
     parser.add_argument("-i","--input", type=str, help="Input text")
-
     args = parser.parse_args()
 
-    if args.mode is None or args.input is None:
-        help()
-    else:
-        if int(args.mode) == 0:
-            if args.input:
-                a = leetspeak(args.input, 0)
-                print(a)
-            else:
-                print("Error: No input text provided.")
-        elif int(args.mode) == 1:
-            if args.input:
-                a = leetspeak(args.input, 1)
-                print(a)
-            else:
-                print("Error: No input text provided.")
+    if args.mode in ['0', '1']:
+        if args.input:
+            a = leetspeak(args.input, int(args.mode))
+            print(a)
         else:
-            # 显示帮助文档
-            help()
+            print("Error: No input.")
+    else:
+        print("Error: mode fail.")
+        help()
 
 
 if __name__ == "__main__":
