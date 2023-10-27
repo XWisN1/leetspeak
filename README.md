@@ -9,4 +9,6 @@ leetspeak翻译小玩具
 leetspeak.py是小程序原理，替换逻辑也在其中
 
 可直接下列代码直接将Python文件转换为可执行的EXE文件
+```
 pyinstaller --onefile .\leetspeak.py
+```
