@@ -5,7 +5,10 @@ leetspeak翻译小玩具
 ```
 leetspeak.exe -m 0 -i "asfdasf"
 ```
-
+输出结果为：
+```
+@5fd@5f
+```
 -m是选择方式，0-编译，1-解译（目前只对win下的0有用）
 -i 输出内容
 
